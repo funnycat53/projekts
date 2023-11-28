@@ -11,13 +11,26 @@
         <title>Politiskie režīmi</title>
 
         <script>
-
-
+            let autoritarismsTeksts = "teksts"
+       
+            function demokratijaf() {
+                document.getElementById("d1teksts").innerHTML = "kkas gudrs"
+            }
+            function Valstiss() {
+                document.getElementById("saturs").classList.add("d-none") 
+                document.getElementById("Valstis").classList.remove("d-none")
+            }
 
         </script>
+        
+            
 
         <style>
 
+            /* #Valstis {
+                display: none;
+            }
+ */
             .header{
                 padding: 15px;
                 text-align: center;
@@ -76,80 +89,33 @@
                 <h1 class="header"><b>Politiskie režīmi</b></h1>
                     <hr>
                 <ul>
-                    <li><a href="#Demokrātija" class="teksts">Demokrātija</a></li>
-                    <li><a href="#Autoritārisms" class="teksts">Autoritārisms</a></li>
+                    <li><a onclick="demokratijaf()" href="#" class="teksts">Demokrātija</a></li>
+                    <li><a href="#" class="teksts">Autoritārisms</a></li>
                     <li><a href="#Totalitārisms" class="teksts">Totalitārisms</a></li>
                     <li style="float:right" class="teksts"><a href="#Atsauces">Atsauces</a></li>
-                    <li style="float:right" class="teksts"><a href="#Valstis">Valstis</a></li>
+                    <li style="float:right" class="teksts"><a onclick="Valstiss()" href="#Valstis">Valstis</a></li>
+                    <li style="float:right" class="teksts"><a href="#Sākuma lapa">Sākuma lapa</a></li>
                 </ul>
                     <hr>
-            <div class="virsraksti">    
-                <h3><b>Demokrātija</b></h3>
-                    <pre>
-te
-                        
+                    
+                
+                <div id="saturs" class="row">
 
-
-bus
-
-
-
-teksts
-
-
-
-                    </pre>
-            </div>
-                <hr>
-            <div class="virsraksti">
-                <h3><b>Autoritārisms</b></h3>
-                <pre>
-te
-                                            
-                    
-                    
-bus
-                    
-                    
-                    
-teksts
-                    
-                    
-                    
-                                        </pre>
-            </div>
-                <hr>
-            <div class="virsraksti">
-                <h3><b>Totalitārisms</b></h3>
-                <pre>
-te
-                                            
-                    
-                    
-bus
-                    
-                    
-                    
-teksts
-                    
-                    
-                    
-                                        </pre>
-            </div>
-                <hr>
-
-            <div class="row">
-                <div class="col" style="text-align: left; font-family: 'Times New Roman', Times, serif; padding: 15px;">
+                <p> blah</p>
+                </div>
+            
+            <div id="Valstis" class="row d-none">
+                <div class="col-4" style="font-family: 'Times New Roman', Times, serif; padding: 15px;">
                     <h3><b>Demokrātiska valsts</b></h3>
                     <p>biskin teksts plus bilde</p>
                     <button>Bilde</button>
                 </div>
-                <div class="col" style="text-align: center; font-family: 'Times New Roman', Times, serif; padding: 15px;">
+                <div class="col-4" style="font-family: 'Times New Roman', Times, serif; padding: 15px;">
                     <h3><b>Autoritāra valsts</b></h3>
                     <p>biskin teksts plus bilde</p>
                     <button>Bilde</button>
                 </div>
-                <div class="col" style="text-align: right; font-family: 'Times New Roman', Times, serif; padding: 15px;">
+                <div class="col-4" style="font-family: 'Times New Roman', Times, serif; padding: 15px;">
                     <h3><b>Totalitāra valsts</b></h3>
                     <p>biskin teksts plus bilde</p>
                     <button>Bilde</button>
