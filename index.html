@@ -14,13 +14,22 @@
             let autoritarismsTeksts = "teksts"
        
             function demokratijaf() {
-                document.getElementById("d1teksts").innerHTML = "kkas gudrs"
+                document.getElementById("saturs").innerHTML = "kkas gudrs"
             }
-            function Valstiss() {
+            function Valstisf() {
                 document.getElementById("saturs").classList.add("d-none") 
                 document.getElementById("Valstis").classList.remove("d-none")
             }
-
+            function autoritarismsf() {
+                document.getElementById("saturs").innerHTML = "kkas gudrāks"
+            }
+            function totalitarismsf() {
+                document.getElementById("saturs").innerHTML = "kkas vēl gudrāks"
+                
+            }
+            function sakumalapaf() {
+                document.getElementById("saturs").innerHTML = "Visgudrākais"
+            }
         </script>
         
             
@@ -96,11 +105,11 @@
                     <hr>
                 <ul>
                     <li><a onclick="demokratijaf()" href="#" class="navipogas">Demokrātija</a></li>
-                    <li><a href="#" class="navipogas">Autoritārisms</a></li>
-                    <li><a href="#Totalitārisms" class="navipogas">Totalitārisms</a></li>
+                    <li><a onclick="autoritarismsf()" href="#" class="navipogas">Autoritārisms</a></li>
+                    <li><a onclick="totalitarismsf()" href="#Totalitārisms" class="navipogas">Totalitārisms</a></li>
                     <li style="float:right" class="navipogas"><a href="#Atsauces">Atsauces</a></li>
-                    <li style="float:right" class="navipogas"><a onclick="Valstiss()" href="#Valstis">Valstis</a></li>
-                    <li style="float:right" class="navipogas"><a href="#Sākuma lapa">Sākuma lapa</a></li>
+                    <li style="float:right" class="navipogas"><a onclick="Valstisf()" href="#Valstis">Valstis</a></li>
+                    <li style="float:right" class="navipogas"><a onclick="sakumalapaf()" href="#Sākuma lapa">Sākuma lapa</a></li>
                 </ul>
                     <hr>
                     
