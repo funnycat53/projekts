@@ -15,6 +15,8 @@
        
             function demokratijaf() {
                 document.getElementById("saturs").innerHTML = "kkas gudrs"
+                document.getElementById("saturs").classList.remove("d-none") 
+                document.getElementById("Valstis").classList.add("d-none")
             }
             function Valstisf() {
                 document.getElementById("saturs").classList.add("d-none") 
@@ -22,13 +24,23 @@
             }
             function autoritarismsf() {
                 document.getElementById("saturs").innerHTML = "kkas gudrāks"
+                document.getElementById("saturs").classList.remove("d-none") 
+                document.getElementById("Valstis").classList.add("d-none")
             }
             function totalitarismsf() {
                 document.getElementById("saturs").innerHTML = "kkas vēl gudrāks"
-                
+                document.getElementById("saturs").classList.remove("d-none") 
+                document.getElementById("Valstis").classList.add("d-none")
             }
             function sakumalapaf() {
-                document.getElementById("saturs").innerHTML = "Visgudrākais"
+                document.getElementById("saturs").innerHTML = '<p class="teksts" style="text-align: center;"> blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>'
+                document.getElementById("saturs").classList.remove("d-none") 
+                document.getElementById("Valstis").classList.add("d-none")
+            }
+            function atsaucesf() {
+                document.getElementById("saturs").innerHTML = "chatgpt"
+                document.getElementById("saturs").classList.remove("d-none") 
+                document.getElementById("Valstis").classList.add("d-none")
             }
         </script>
         
@@ -107,7 +119,7 @@
                     <li><a onclick="demokratijaf()" href="#" class="navipogas">Demokrātija</a></li>
                     <li><a onclick="autoritarismsf()" href="#" class="navipogas">Autoritārisms</a></li>
                     <li><a onclick="totalitarismsf()" href="#Totalitārisms" class="navipogas">Totalitārisms</a></li>
-                    <li style="float:right" class="navipogas"><a href="#Atsauces">Atsauces</a></li>
+                    <li style="float:right" class="navipogas"><a onclick="atsaucesf()" href="#Atsauces">Atsauces</a></li>
                     <li style="float:right" class="navipogas"><a onclick="Valstisf()" href="#Valstis">Valstis</a></li>
                     <li style="float:right" class="navipogas"><a onclick="sakumalapaf()" href="#Sākuma lapa">Sākuma lapa</a></li>
                 </ul>
@@ -136,7 +148,6 @@
                     <button>Bilde</button>
                 </div>
             </div>
-
             </div>
         </body>
 </html>
