@@ -14,21 +14,38 @@
             let autoritarismsTeksts = "teksts"
        
             function demokratijaf() {
-                document.getElementById("saturs").innerHTML = "kkas gudrs"
+                document.getElementById("tekstssaturs").innerHTML = "kkas gudrs"
+                document.getElementById("saturs").classList.remove("d-none") 
+                document.getElementById("Valstis").classList.add("d-none")
+                document.getElementById("atsauces").classList.add("d-none")
             }
             function Valstisf() {
                 document.getElementById("saturs").classList.add("d-none") 
                 document.getElementById("Valstis").classList.remove("d-none")
+                document.getElementById("atsauces").classList.add("d-none")
             }
             function autoritarismsf() {
-                document.getElementById("saturs").innerHTML = "kkas gudrāks"
+                document.getElementById("tekstssaturs").innerHTML = "kkas gudrāks"
+                document.getElementById("saturs").classList.remove("d-none") 
+                document.getElementById("Valstis").classList.add("d-none")
+                document.getElementById("atsauces").classList.add("d-none")
             }
             function totalitarismsf() {
-                document.getElementById("saturs").innerHTML = "kkas vēl gudrāks"
-                
+                document.getElementById("tekstssaturs").innerHTML = "kkas vēl gudrāks"
+                document.getElementById("saturs").classList.remove("d-none") 
+                document.getElementById("Valstis").classList.add("d-none")
+                document.getElementById("atsauces").classList.add("d-none")
             }
             function sakumalapaf() {
-                document.getElementById("saturs").innerHTML = "Visgudrākais"
+                document.getElementById("tekstssaturs").innerHTML = "Visgudrākais"
+                document.getElementById("saturs").classList.remove("d-none") 
+                document.getElementById("Valstis").classList.add("d-none")
+                document.getElementById("atsauces").classList.add("d-none")
+            }
+            function atsaucesf() {
+                document.getElementById("atsauces").classList.remove("d-none")
+                document.getElementById("saturs").classList.add("d-none") 
+                document.getElementById("Valstis").classList.add("d-none")
             }
         </script>
         
@@ -98,7 +115,8 @@
         </style>
 
     </head>
-        <body>
+        <body onload="sakumalapaf()">
+            
             <div class="container">
 
                 <h1 class="header"><b>Politiskie režīmi</b></h1>
@@ -107,16 +125,20 @@
                     <li><a onclick="demokratijaf()" href="#" class="navipogas">Demokrātija</a></li>
                     <li><a onclick="autoritarismsf()" href="#" class="navipogas">Autoritārisms</a></li>
                     <li><a onclick="totalitarismsf()" href="#Totalitārisms" class="navipogas">Totalitārisms</a></li>
-                    <li style="float:right" class="navipogas"><a href="#Atsauces">Atsauces</a></li>
+                    <li style="float:right" class="navipogas"><a onclick="atsaucesf()" href="#Atsauces">Atsauces</a></li>
                     <li style="float:right" class="navipogas"><a onclick="Valstisf()" href="#Valstis">Valstis</a></li>
                     <li style="float:right" class="navipogas"><a onclick="sakumalapaf()" href="#Sākuma lapa">Sākuma lapa</a></li>
                 </ul>
                     <hr>
                     
+                    
                 
                 <div id="saturs" class="row">
-
-                <p class="teksts" style="text-align: center;"> blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                <p id="tekstssaturs"></p>
+                
+                </div>
+                <div id="atsauces" class="row">
+                <p>Šeit būs atsauces</p>
                 </div>
             
             <div id="Valstis" class="row d-none">
