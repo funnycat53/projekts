@@ -18,6 +18,8 @@
                 document.getElementById("saturs").classList.remove("d-none") 
                 document.getElementById("Valstis").classList.add("d-none")
                 document.getElementById("atsauces").classList.add("d-none")
+                document.getElementById("imageDA").classList.remove("d-none")
+                document.getElementById("imageS").classList.add("d-none")
             }
             function Valstisf() {
                 document.getElementById("saturs").classList.add("d-none") 
@@ -29,18 +31,24 @@
                 document.getElementById("saturs").classList.remove("d-none") 
                 document.getElementById("Valstis").classList.add("d-none")
                 document.getElementById("atsauces").classList.add("d-none")
+                document.getElementById("imageDA").classList.remove("d-none")
+                document.getElementById("imageS").classList.add("d-none")
             }
             function totalitarismsf() {
                 document.getElementById("tekstssaturs").innerHTML = "kkas vēl gudrāks"
                 document.getElementById("saturs").classList.remove("d-none") 
                 document.getElementById("Valstis").classList.add("d-none")
                 document.getElementById("atsauces").classList.add("d-none")
+                document.getElementById("imageDA").classList.add("d-none")
+                document.getElementById("imageS").classList.add("d-none")
             }
             function sakumalapaf() {
-                document.getElementById("tekstssaturs").innerHTML = "Visgudrākais"
+                document.getElementById("tekstssaturs").innerHTML = "Visgudrākais blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah"
                 document.getElementById("saturs").classList.remove("d-none") 
                 document.getElementById("Valstis").classList.add("d-none")
                 document.getElementById("atsauces").classList.add("d-none")
+                document.getElementById("imageDA").classList.add("d-none")
+                document.getElementById("imageS").classList.remove("d-none")
             }
             function atsaucesf() {
                 document.getElementById("atsauces").classList.remove("d-none")
@@ -112,6 +120,12 @@
                 font-size: 15px;
             }
 
+            .img {
+                height: 360px;
+                width: 525px;
+                padding: 10px;
+            }
+
         </style>
 
     </head>
@@ -134,7 +148,14 @@
                     
                 
                 <div id="saturs" class="row">
+                    <div class="col-7">
                 <p id="tekstssaturs"></p>
+                    </div>
+                    <div class="col-5">
+                        <img src="https://images.slideplayer.com/16/5026811/slides/slide_2.jpg" class="img" id="imageDA">
+                        <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1057%2Fs41304-018-0149-8/MediaObjects/41304_2018_149_Fig1_HTML.gif"
+                            class="img" id="imageS">
+                    </div>
                 
                 </div>
                 <div id="atsauces" class="row">
