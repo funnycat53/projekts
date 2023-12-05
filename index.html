@@ -14,15 +14,28 @@
             let autoritarismsTeksts = "teksts"
        
             function demokratijaf() {
+<<<<<<< HEAD
                 document.getElementById("saturs").innerHTML = "kkas gudrs"
                 document.getElementById("saturs").classList.remove("d-none") 
                 document.getElementById("Valstis").classList.add("d-none")
+=======
+                document.getElementById("tekstssaturs").innerHTML = "kkas gudrs"
+                document.getElementById("saturs").classList.remove("d-none") 
+                document.getElementById("Valstis").classList.add("d-none")
+                document.getElementById("atsauces").classList.add("d-none")
+                document.getElementById("imageD").classList.remove("d-none")
+                document.getElementById("imageS").classList.add("d-none")
+                document.getElementById("imageA").classList.add("d-none")
+                document.getElementById("imageT").classList.add("d-none")
+>>>>>>> 3002f5713d68353ce2e275936ed7d6869ca853c9
             }
             function Valstisf() {
                 document.getElementById("saturs").classList.add("d-none") 
                 document.getElementById("Valstis").classList.remove("d-none")
+                document.getElementById("atsauces").classList.add("d-none")
             }
             function autoritarismsf() {
+<<<<<<< HEAD
                 document.getElementById("saturs").innerHTML = "kkas gudrāks"
                 document.getElementById("saturs").classList.remove("d-none") 
                 document.getElementById("Valstis").classList.add("d-none")
@@ -40,6 +53,40 @@
             function atsaucesf() {
                 document.getElementById("saturs").innerHTML = "chatgpt"
                 document.getElementById("saturs").classList.remove("d-none") 
+=======
+                document.getElementById("tekstssaturs").innerHTML = "kkas gudrāks"
+                document.getElementById("saturs").classList.remove("d-none") 
+                document.getElementById("Valstis").classList.add("d-none")
+                document.getElementById("atsauces").classList.add("d-none")
+                document.getElementById("imageD").classList.add("d-none")
+                document.getElementById("imageS").classList.add("d-none")
+                document.getElementById("imageA").classList.remove("d-none")
+                document.getElementById("imageT").classList.add("d-none")
+            }
+            function totalitarismsf() {
+                document.getElementById("tekstssaturs").innerHTML = "kkas vēl gudrāks"
+                document.getElementById("saturs").classList.remove("d-none") 
+                document.getElementById("Valstis").classList.add("d-none")
+                document.getElementById("atsauces").classList.add("d-none")
+                document.getElementById("imageD").classList.add("d-none")
+                document.getElementById("imageS").classList.add("d-none")
+                document.getElementById("imageA").classList.add("d-none")
+                document.getElementById("imageT").classList.remove("d-none")
+            }
+            function sakumalapaf() {
+                document.getElementById("tekstssaturs").innerHTML = "Visgudrākais blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah"
+                document.getElementById("saturs").classList.remove("d-none") 
+                document.getElementById("Valstis").classList.add("d-none")
+                document.getElementById("atsauces").classList.add("d-none")
+                document.getElementById("imageD").classList.add("d-none")
+                document.getElementById("imageS").classList.remove("d-none")
+                document.getElementById("imageA").classList.add("d-none")
+                document.getElementById("imageT").classList.add("d-none")
+            }
+            function atsaucesf() {
+                document.getElementById("atsauces").classList.remove("d-none")
+                document.getElementById("saturs").classList.add("d-none") 
+>>>>>>> 3002f5713d68353ce2e275936ed7d6869ca853c9
                 document.getElementById("Valstis").classList.add("d-none")
             }
         </script>
@@ -107,10 +154,17 @@
                 font-size: 15px;
             }
 
+            .img {
+                height: 360px;
+                width: 525px;
+                padding: 10px;
+            }
+
         </style>
 
     </head>
-        <body>
+        <body onload="sakumalapaf()">
+            
             <div class="container">
 
                 <h1 class="header"><b>Politiskie režīmi</b></h1>
@@ -125,10 +179,28 @@
                 </ul>
                     <hr>
                     
+                    
                 
                 <div id="saturs" class="row">
-
-                <p class="teksts" style="text-align: center;"> blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                    <div class="col-7">
+                <p class="teksts" id="tekstssaturs"></p>
+                <button type="button" class="btn btn-light" id="PogaRadit" onclick="raditSaturu()">Rādīt vairāk</button>
+                <div id="RadamaisSaturs">
+                    <p class="teksts" id="extrasaturs">ddddddddd</p>
+                    <button type="button" class="btn btn-light" onclick="pasleptSaturu()">Rādīt mazāk</button>
+                </div>
+                    </div>
+                
+                    <div class="col-5">
+                        <img src="" class="img" alt="Sākuma lapas bilde" id="imageS">
+                        <img src="" alt="Demokrātijas bilde" class="img" id="imageD">
+                        <img src="" alt="Autoritārisma bilde" class="img" id="imageA">
+                        <img src="" alt="Totalitārisma bilde" class="img" id="imageT">
+                    </div>
+                
+                </div>
+                <div id="atsauces" class="row">
+                <p class="teksts">Šeit būs atsauces</p>
                 </div>
             
             <div id="Valstis" class="row d-none">
