@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
         <title>Politiskie režīmi</title>
 
@@ -52,7 +51,7 @@
                 document.getElementById("radamaisteksts").innerHTML = "totalitarisma teksts"
             }
             function sakumalapaf() {
-                document.getElementById("tekstssaturs").innerHTML = "Visgudrākais blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah"
+                document.getElementById("tekstssaturs").innerHTML = "Visgudrākais blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah"
                 document.getElementById("saturs").classList.remove("d-none") 
                 document.getElementById("Valstis").classList.add("d-none")
                 document.getElementById("atsauces").classList.add("d-none")
@@ -76,7 +75,7 @@
                 document.getElementById("PogaRadit").style.display="block"
             }
             function majaslapaload() {
-                document.getElementById("tekstssaturs").innerHTML = "Visgudrākais blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah"
+                document.getElementById("tekstssaturs").innerHTML = "Visgudrākais blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah"
                 document.getElementById("saturs").classList.remove("d-none") 
                 document.getElementById("Valstis").classList.add("d-none")
                 document.getElementById("atsauces").classList.add("d-none")
@@ -144,13 +143,13 @@
             .navipogas{
                 font-family: 'Times New Roman', Times, serif;
                 color: black;
-                font-size: 20px;
+                font-size: 25px;
             }
 
             .teksts{
                 font-family: 'Times New Roman', Times, serif;
                 color: black;
-                font-size: 15px;
+                font-size: 20px;
             }
 
             .img {
@@ -169,8 +168,8 @@
                 <h1 class="header"><b>Politiskie režīmi</b></h1>
                     <hr>
                 <ul>
-                    <li><a onclick="demokratijaf()" href="#" class="navipogas">Demokrātija</a></li>
-                    <li><a onclick="autoritarismsf()" href="#" class="navipogas">Autoritārisms</a></li>
+                    <li><a onclick="demokratijaf()" href="#Demokrātija" class="navipogas">Demokrātija</a></li>
+                    <li><a onclick="autoritarismsf()" href="#Autoritārisms" class="navipogas">Autoritārisms</a></li>
                     <li><a onclick="totalitarismsf()" href="#Totalitārisms" class="navipogas">Totalitārisms</a></li>
                     <li style="float:right" class="navipogas"><a onclick="atsaucesf()" href="#Atsauces">Atsauces</a></li>
                     <li style="float:right" class="navipogas"><a onclick="Valstisf()" href="#Valstis">Valstis</a></li>
@@ -182,16 +181,16 @@
                 
                 <div id="saturs" class="row">
                     <div class="col-7">
-                <p class="teksts" id="tekstssaturs"></p>
-                <button type="button" class="btn btn-light" id="PogaRadit" onclick="raditSaturu()">Rādīt vairāk</button>
+                <p class="teksts" style="text-align: left;" id="tekstssaturs"></p>
+                <button type="button" class="btn btn-light" style="margin: 10px;" id="PogaRadit" onclick="raditSaturu()">Rādīt vairāk</button>
                 <div id="RadamaisSaturs">
-                    <p class="teksts" id="radamaisteksts">ddddddddd</p>
-                    <button type="button" class="btn btn-light" onclick="pasleptSaturu()">Rādīt mazāk</button>
+                    <p class="teksts" style="text-align: left;" id="radamaisteksts"></p>
+                    <button type="button" class="btn btn-light" style="margin: 10px;" onclick="pasleptSaturu()">Rādīt mazāk</button>
                 </div>
                     </div>
                 
                     <div class="col-5">
-                        <img src="" alt="Sākuma lapas bilde" class="img" id="imageS">
+                        <img src="https://ourworldindata.org/grapher/thumbnail/political-regime.png?imType=og" alt="Sākuma lapas bilde" class="img-fluid; img" id="imageS">
                         <img src="" alt="Demokrātijas bilde" class="img" id="imageD">
                         <img src="" alt="Autoritārisma bilde" class="img" id="imageA">
                         <img src="" alt="Totalitārisma bilde" class="img" id="imageT">
@@ -246,6 +245,8 @@
                       </div>               
                 </div>
             </div>
+            <hr>
             </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         </body>
 </html>
