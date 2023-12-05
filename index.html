@@ -22,6 +22,7 @@
                 document.getElementById("imageS").classList.add("d-none")
                 document.getElementById("imageA").classList.add("d-none")
                 document.getElementById("imageT").classList.add("d-none")
+                document.getElementById("radamaisteksts").innerHTML = "demoktratijas teksts"
             }
             function Valstisf() {
                 document.getElementById("saturs").classList.add("d-none") 
@@ -37,6 +38,7 @@
                 document.getElementById("imageS").classList.add("d-none")
                 document.getElementById("imageA").classList.remove("d-none")
                 document.getElementById("imageT").classList.add("d-none")
+                document.getElementById("radamaisteksts").innerHTML = "autoritarisma teksts"
             }
             function totalitarismsf() {
                 document.getElementById("tekstssaturs").innerHTML = "kkas vēl gudrāks"
@@ -47,6 +49,7 @@
                 document.getElementById("imageS").classList.add("d-none")
                 document.getElementById("imageA").classList.add("d-none")
                 document.getElementById("imageT").classList.remove("d-none")
+                document.getElementById("radamaisteksts").innerHTML = "totalitarisma teksts"
             }
             function sakumalapaf() {
                 document.getElementById("tekstssaturs").innerHTML = "Visgudrākais blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah"
@@ -57,11 +60,33 @@
                 document.getElementById("imageS").classList.remove("d-none")
                 document.getElementById("imageA").classList.add("d-none")
                 document.getElementById("imageT").classList.add("d-none")
+                document.getElementById("radamaisteksts").innerHTML = "sakuma lapas teksts"
             }
             function atsaucesf() {
                 document.getElementById("atsauces").classList.remove("d-none")
                 document.getElementById("saturs").classList.add("d-none") 
                 document.getElementById("Valstis").classList.add("d-none")
+            }
+            function raditSaturu() {
+                document.getElementById("RadamaisSaturs").style.display="block"
+                document.getElementById("PogaRadit").style.display="none"
+            }
+            function pasleptSaturu() {
+                document.getElementById("RadamaisSaturs").style.display="none"
+                document.getElementById("PogaRadit").style.display="block"
+            }
+            function majaslapaload() {
+                document.getElementById("tekstssaturs").innerHTML = "Visgudrākais blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah"
+                document.getElementById("saturs").classList.remove("d-none") 
+                document.getElementById("Valstis").classList.add("d-none")
+                document.getElementById("atsauces").classList.add("d-none")
+                document.getElementById("imageD").classList.add("d-none")
+                document.getElementById("imageS").classList.remove("d-none")
+                document.getElementById("imageA").classList.add("d-none")
+                document.getElementById("imageT").classList.add("d-none")
+                document.getElementById("radamaisteksts").innerHTML = "sakuma lapas teksts"
+                document.getElementById("RadamaisSaturs").style.display="none"
+                document.getElementById("PogaRadit").style.display="block"
             }
         </script>
         
@@ -137,7 +162,7 @@
         </style>
 
     </head>
-        <body onload="sakumalapaf()">
+        <body onload="majaslapaload()">
             
             <div class="container">
 
@@ -160,7 +185,7 @@
                 <p class="teksts" id="tekstssaturs"></p>
                 <button type="button" class="btn btn-light" id="PogaRadit" onclick="raditSaturu()">Rādīt vairāk</button>
                 <div id="RadamaisSaturs">
-                    <p class="teksts" id="extrasaturs">ddddddddd</p>
+                    <p class="teksts" id="radamaisteksts">ddddddddd</p>
                     <button type="button" class="btn btn-light" onclick="pasleptSaturu()">Rādīt mazāk</button>
                 </div>
                     </div>
